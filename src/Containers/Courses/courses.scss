@@ -1,0 +1,67 @@
+.courses-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;  
+  max-width: 980px;
+  margin: 25px auto;
+  padding: 0 10px 0 10px;
+
+  .courses-add {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: #000;
+    text-decoration: underline;
+    cursor: pointer;
+
+    &-modal {
+      position: absolute;
+      left: -999px;
+      top: 25px;
+      background-color: rgb(255, 255, 255);
+      border: solid 1px gray;
+      transition: all 0.5s;
+    }
+    &-modal.active {
+      left: 0px;
+      transition: all 0.2s;     
+    }
+  }
+  .courses-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+.table-header {
+  display: flex;
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 0 10px;
+
+  &-col {
+    flex-basis: 50%;
+    padding: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgb(82, 82, 82);
+
+    &:last-child, &:nth-child(2) {
+      flex-basis: 25%;
+    }
+  }
+}
+#error {
+  padding: 10px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: red;
+  text-align: center;
+} 

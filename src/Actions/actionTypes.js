@@ -1,0 +1,3 @@
+export const DELETE_COURSE = 'DELETE_COURSE';
+export const GET_LOCAL_COURSES = 'GET_LOCAL_COURSES';
+export const ADD_COURSE = 'ADD_COURSE';
